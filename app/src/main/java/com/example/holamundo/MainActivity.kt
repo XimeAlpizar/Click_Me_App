@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         val userInput: EditText = findViewById<EditText>(R.id.editText)
         val button: Button = findViewById<Button>(R.id.button4)
+        val button2: Button = findViewById<Button>(R.id.button5)
         textView = findViewById<TextView>(R.id.textView2)
 
         textView?.text =""
@@ -35,6 +36,14 @@ class MainActivity : AppCompatActivity() {
                 textView?.append(userInput.text)
                 textView?.append("\n")
                 // userInput.setText("")
+                userInput.text.clear()
+            }
+        })
+
+        button2.setOnClickListener(object :View.OnClickListener {
+            override fun onClick(p0: View?) {
+                Log.d(TAG, "onClick")
+                textView?.text =""
                 userInput.text.clear()
             }
         })
