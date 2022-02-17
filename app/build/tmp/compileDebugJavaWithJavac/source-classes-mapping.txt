@@ -1,0 +1,2 @@
+com/example/holamundo/BuildConfig.java
+ com.example.holamundo.BuildConfig
